@@ -17,4 +17,4 @@ If `https://andrewtrodriguez.github.io/` is not loading, the most common reasons
 
 ## Deployment workflow
 
-The workflow at `.github/workflows/deploy-pages.yml` deploys on every push and on manual dispatch.
+The workflow at `.github/workflows/deploy-pages.yml` always runs a verification job, and only deploys when the push is on the repository default branch. Pull requests never deploy to production Pages.
