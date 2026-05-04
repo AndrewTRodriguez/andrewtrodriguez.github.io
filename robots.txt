@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://andrewtrodriguez.github.io/sitemap.xml
