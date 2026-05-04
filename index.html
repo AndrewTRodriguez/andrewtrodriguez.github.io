@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrew T. Rodriguez | Project-Based Learning Portfolio</title>
+  <meta name="description" content="Andrew T. Rodriguez builds high-impact web experiences and project-based learning solutions. Explore selected work, skills, and contact information." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://andrewtrodriguez.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Andrew T. Rodriguez | Project-Based Learning Portfolio" />
+  <meta property="og:description" content="A focused, SEO-optimized portfolio showcasing product thinking, technical depth, and measurable impact." />
+  <meta property="og:url" content="https://andrewtrodriguez.github.io/" />
+  <meta property="og:site_name" content="Andrew T. Rodriguez" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Andrew T. Rodriguez | Project-Based Learning Portfolio" />
+  <meta name="twitter:description" content="Explore projects, outcomes, and strengths built for mission-driven teams." />
+
+  <style>
+    :root {
+      --buck-blue: #005f86;
+      --buck-navy: #003b5c;
+      --buck-teal: #00a6b4;
+      --buck-gold: #f5b335;
+      --ink: #13293d;
+      --bg: #f5f9fc;
+      --white: #ffffff;
+      --muted: #5c6b7a;
+      --ring: rgba(0, 95, 134, 0.25);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    .container {
+      width: min(1120px, 92vw);
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--buck-navy), var(--buck-blue));
+      color: var(--white);
+      padding: 1rem 0 5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      right: -5rem;
+      top: -5rem;
+      width: 18rem;
+      height: 18rem;
+      background: radial-gradient(circle, rgba(245, 179, 53, 0.6), rgba(245, 179, 53, 0));
+      border-radius: 50%;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: #fff;
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    .hero {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+
+    .lead {
+      font-size: clamp(1rem, 2.2vw, 1.25rem);
+      max-width: 62ch;
+      margin-bottom: 1.6rem;
+      color: #e9f4ff;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: transform 120ms ease, box-shadow 120ms ease;
+      border: 2px solid transparent;
+    }
+
+    .btn:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 4px var(--ring);
+    }
+
+    .btn-primary {
+      background: var(--buck-gold);
+      color: #2a1d00;
+    }
+
+    .btn-secondary {
+      border-color: rgba(255,255,255,.65);
+      color: #fff;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .hero-card {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      backdrop-filter: blur(4px);
+      border-radius: 18px;
+      padding: 1.2rem;
+    }
+
+    main { margin-top: -2.6rem; }
+
+    section {
+      background: var(--white);
+      border-radius: 18px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,.06);
+      margin-bottom: 1.2rem;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--buck-navy);
+      font-size: clamp(1.35rem, 3vw, 2rem);
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      border: 1px solid #e4ecf3;
+      border-left: 6px solid var(--buck-teal);
+      border-radius: 14px;
+      padding: 1rem;
+      background: #fbfdff;
+    }
+
+    .kpi {
+      font-size: 1.7rem;
+      margin: 0;
+      color: var(--buck-blue);
+      font-weight: 800;
+    }
+
+    .muted { color: var(--muted); }
+
+    footer {
+      padding: 1.2rem 0 2rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; }
+      main { margin-top: -2rem; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Andrew T. Rodriguez",
+    "url": "https://andrewtrodriguez.github.io/",
+    "jobTitle": "Product-Focused Web Developer",
+    "sameAs": [
+      "https://github.com/AndrewTRodriguez"
+    ],
+    "knowsAbout": ["Web Development", "Project-Based Learning", "Product Strategy", "Accessibility", "SEO"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main">
+        <div class="brand">
+          <img src="https://www.buckinstitute.org/wp-content/themes/pblworks/assets/images/bie-logo.svg" alt="PBLWorks logo" loading="lazy" />
+          <span>Andrew T. Rodriguez</span>
+        </div>
+        <a class="btn btn-secondary" href="mailto:andrew@example.com">Contact</a>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1>Build meaningful products that scale learning and impact.</h1>
+          <p class="lead">I help teams turn ambitious ideas into fast, accessible, measurable web experiences—combining technical execution with product-level judgment.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://github.com/AndrewTRodriguez">View GitHub</a>
+            <a class="btn btn-secondary" href="#work">Explore Work</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Highlights">
+          <p class="kpi">10+ shipped initiatives</p>
+          <p class="muted">From concept to launch, focused on user outcomes and performance.</p>
+          <p class="kpi">95+ Lighthouse potential</p>
+          <p class="muted">SEO, accessibility, and speed considered from day one.</p>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Selected Value I Bring</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Product-Led Engineering</h3>
+          <p>I prioritize what creates measurable value, not just what is technically interesting.</p>
+        </article>
+        <article class="card">
+          <h3>SEO + Performance by Default</h3>
+          <p>Technical SEO, semantic HTML, and lean front-end decisions are built into every delivery.</p>
+        </article>
+        <article class="card">
+          <h3>Mission-Driven Collaboration</h3>
+          <p>I communicate clearly with stakeholders and turn feedback loops into momentum.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="why-title">
+      <h2 id="why-title">Why Employers Hire Me</h2>
+      <ul>
+        <li><strong>Fast execution:</strong> I turn ambiguity into functioning product slices quickly.</li>
+        <li><strong>Systems thinking:</strong> I design solutions that are maintainable, testable, and reusable.</li>
+        <li><strong>User empathy:</strong> I optimize for clarity, inclusion, and tangible outcomes.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Andrew T. Rodriguez · Built for GitHub Pages</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
