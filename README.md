@@ -1,20 +1,41 @@
-# AndrewTRodriguez.github.io
+# Andrew T. Rodriguez — GitHub Pages Portfolio
 
-This repository is configured for **GitHub Pages via GitHub Actions**.
+This repository powers the public site at:
 
-## Why `index.html` may not load yet
+- **https://andrewtrodriguez.github.io/**
 
-If `https://andrewtrodriguez.github.io/` is not loading, the most common reasons are:
+## What is included
 
-1. **Pages source not set to GitHub Actions** in **Settings → Pages**.
-2. The deploy workflow has not run successfully yet.
-3. DNS/CDN propagation delay right after first publish (can take a few minutes).
+- `index.html` — single-page portfolio landing page.
+- `robots.txt` — crawl policy for search engines.
+- `sitemap.xml` — sitemap for indexing.
+- `.github/workflows/deploy-pages.yml` — CI + deployment workflow for GitHub Pages.
 
-## Required repository setting (GitHub UI)
+## GitHub Pages setup (required once)
+
+In the repository on GitHub:
 
 1. Open **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+2. Set **Build and deployment → Source** to **GitHub Actions**.
 
-## Deployment workflow
+## Deployment behavior
 
-The workflow at `.github/workflows/deploy-pages.yml` always runs a verification job, and only deploys when the push is on the repository default branch. Pull requests never deploy to production Pages.
+The workflow does two things:
+
+1. **Verify** on pushes, pull requests, and manual runs:
+   - checks `index.html`, `robots.txt`, and `sitemap.xml` exist.
+2. **Deploy** only when:
+   - event is **not** a pull request, and
+   - branch is the repository **default branch**.
+
+This prevents PR branches from deploying to production.
+
+## Local preview
+
+Run locally from repo root:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
