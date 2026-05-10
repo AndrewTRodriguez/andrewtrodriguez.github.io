@@ -1,20 +1,59 @@
 # andrewtrodriguez.github.io
 
-Personal website and online resume for Andrew T. Rodriguez, Ph.D. scientist specializing in the biology of aging.
+Personal website for Andrew T. Rodriguez. Live at [andrewtrodriguez.github.io](https://andrewtrodriguez.github.io/).
 
-## About
+## Tech Stack
 
-Ph.D.-trained scientist at the Buck Institute for Research on Aging and University of Southern California (USC), applying rigorous experimental design and scientific judgment to questions in aging biology and frontier AI model evaluation.
+- Static HTML/CSS (no build step, no JS framework)
+- [TT Norms](https://www.buckinstitute.org/) typeface via woff2
+- Responsive two-column grid layout
+- GitHub Pages hosting with automatic deploys on push
 
-## Tech
+## SEO & Discoverability
 
-- Static HTML/CSS hosted on GitHub Pages
-- TT Norms typeface (Buck Institute brand font)
-- Responsive two-column layout
-- SEO-optimized with structured data (JSON-LD), Open Graph, and Twitter Card meta tags
+- JSON-LD structured data (schema.org Person)
+- Open Graph and Twitter Card meta tags
+- `sitemap.xml` with image namespace
+- `robots.txt` explicitly allowing all major AI crawlers
+- `llms.txt` for LLM-readable site summary
+- `ai.txt` for AI agent permissions
 
-## Links
+## Performance
 
-- **Live site:** <https://andrewtrodriguez.github.io/>
-- **LinkedIn:** <https://linkedin.com/in/andrew-rodriguez>
-- **Publication:** [BMC Genomics 23, 842 (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9764823/)
+- Zero JavaScript dependencies (only a one-line year updater)
+- All assets self-hosted (no third-party requests except fonts)
+- Total page weight under 400KB including images
+
+## Accessibility
+
+- Skip-to-content link
+- Semantic HTML landmarks (`header`, `main`, `aside`, `footer`, `nav`)
+- ARIA labels on navigation regions
+- Sufficient color contrast (WCAG AA)
+- Responsive down to 320px viewport
+
+## Structure
+
+```
+/
+├── index.html          # Main page
+├── assets/
+│   ├── images/         # Avatar, og-image
+│   └── icons/          # Favicons, institution logos
+├── robots.txt          # Crawler permissions
+├── sitemap.xml         # Sitemap with image support
+├── site.webmanifest    # PWA manifest
+├── llms.txt            # LLM-readable summary
+├── ai.txt              # AI agent permissions
+└── _headers            # Security headers
+```
+
+## Local Development
+
+Open `index.html` in a browser. No build step needed.
+
+```bash
+open index.html
+# or
+python3 -m http.server 8000
+```

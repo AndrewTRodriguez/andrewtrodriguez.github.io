@@ -10,9 +10,9 @@
   <meta name="keywords" content="Andrew Rodriguez, aging biology, C. elegans, gerontology, Buck Institute, USC, Stanford, bioinformatics, RNA-seq, AI evaluation, scientific reasoning, frontier models, model capabilities, experimental design, mechanistic reasoning" />
   <link rel="canonical" href="https://andrewtrodriguez.github.io/" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <meta name="theme-color" content="#04477f" />
 
@@ -21,7 +21,7 @@
   <meta property="og:description" content="Ph.D.-trained scientist applying rigorous experimental design to aging biology and evaluating where frontier AI models fail in scientific reasoning." />
   <meta property="og:url" content="https://andrewtrodriguez.github.io/" />
   <meta property="og:site_name" content="Andrew T. Rodriguez" />
-  <meta property="og:image" content="https://andrewtrodriguez.github.io/og-image.jpg" />
+  <meta property="og:image" content="https://andrewtrodriguez.github.io/assets/images/og-image.jpg" />
   <meta property="og:image:width" content="1053" />
   <meta property="og:image:height" content="1200" />
   <meta property="og:image:alt" content="Andrew T. Rodriguez" />
@@ -29,7 +29,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Andrew T. Rodriguez | Ph.D. Scientist | Aging Biology & AI Evaluation" />
   <meta name="twitter:description" content="Ph.D.-trained scientist in aging biology. Evaluating frontier models in scientific reasoning." />
-  <meta name="twitter:image" content="https://andrewtrodriguez.github.io/og-image.jpg" />
+  <meta name="twitter:image" content="https://andrewtrodriguez.github.io/assets/images/og-image.jpg" />
 
   <style>
     @font-face {
@@ -76,6 +76,20 @@
       --accent: #00b5e6;
       --surface: #f8f9fa;
     }
+
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--secondary);
+      color: var(--white);
+      border-radius: 4px;
+      z-index: 100;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -260,7 +274,8 @@
     .edu { margin-bottom: 1rem; }
     .edu:last-child { margin-bottom: 0; }
     .edu .deg { font-size: 0.88rem; font-weight: 700; color: var(--dd-blue); line-height: 1.3; }
-    .edu .inst { font-size: 0.82rem; font-weight: 500; color: var(--d-blue); line-height: 1.3; margin-top: 1px; }
+    .edu .inst { font-size: 0.82rem; font-weight: 500; color: var(--d-blue); line-height: 1.3; margin-top: 1px; display: flex; align-items: center; gap: 5px; }
+    .edu .inst-logo { height: 16px; width: auto; opacity: 0.85; flex-shrink: 0; }
     .edu .det { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
     .edu .award {
       font-size: 0.74rem;
@@ -306,7 +321,7 @@
     "@type": "Person",
     "name": "Andrew T. Rodriguez",
     "url": "https://andrewtrodriguez.github.io/",
-    "image": "https://andrewtrodriguez.github.io/avatar.png",
+    "image": "https://andrewtrodriguez.github.io/assets/images/avatar.png",
     "jobTitle": "Ph.D. Scientist, Biology of Aging",
     "description": "Ph.D.-trained scientist applying rigorous experimental design to aging biology and evaluating where frontier AI models fail in scientific reasoning.",
     "alumniOf": [
@@ -324,14 +339,15 @@
   </script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div class="header">
+  <header class="header" role="banner">
     <div class="header-inner">
-      <img class="avatar" src="/avatar.png" alt="Andrew T. Rodriguez" width="110" height="110" />
+      <img class="avatar" src="/assets/images/avatar.png" alt="Andrew T. Rodriguez" width="110" height="110" />
       <div class="header-text">
         <h1>Andrew T. Rodriguez</h1>
         <p class="tagline">Ph.D. Scientist | Aging Biology &amp; Frontier AI Evaluation</p>
-        <div class="header-links">
+        <nav class="header-links" aria-label="Social links">
           <a href="https://linkedin.com/in/andrew-rodriguez" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
             LinkedIn
@@ -344,15 +360,15 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 100 14 7 7 0 000-14z"/></svg>
             Publications
           </a>
-        </div>
+        </nav>
       </div>
     </div>
-  </div>
+  </header>
 
   <div class="page">
 
     <!-- MAIN CONTENT -->
-    <main>
+    <main id="main-content">
       <div class="section">
         <div class="sh">👋🏽 Profile</div>
         <p class="profile">Ph.D.-trained scientist in the biology of aging, applying rigorous experimental design and scientific judgment to questions where confidently-wrong answers are common. Routine user of Claude and Claude Code for analysis, coding, and literature work; interested in building evaluations that probe where frontier models fail in biology, identifying capability gaps in experimental planning, data interpretation, and mechanistic reasoning.</p>
@@ -366,7 +382,7 @@
             <span class="jt">Ph.D. Research Scientist, Biology of Aging</span>
             <span class="jd">Aug 2020 &ndash; Dec 2025</span>
           </div>
-          <p class="jorg"><img class="inst-logo" src="/buck-logo.png" alt="Buck Institute" /> <a href="https://www.buckinstitute.org/" target="_blank">Buck Institute for Research on Aging</a> &amp; <a href="https://gero.usc.edu/" target="_blank">USC</a>, Garrison Lab</p>
+          <p class="jorg"><img class="inst-logo" src="/assets/icons/buck-logo.png" alt="Buck Institute" /> <a href="https://www.buckinstitute.org/" target="_blank">Buck Institute for Research on Aging</a> &amp; <a href="https://gero.usc.edu/" target="_blank">USC</a>, Garrison Lab</p>
           <div class="jorgsub">
             <p>Buck Institute: world's first independent research institute devoted exclusively to aging biology</p>
             <p>USC: world's oldest &amp; largest school of gerontology, home to the first Ph.D. in Gerontology</p>
@@ -386,7 +402,7 @@
             <span class="jt">Staff Research Associate II, Stem Cell Aging</span>
             <span class="jd">Aug 2019 &ndash; Aug 2020</span>
           </div>
-          <p class="jorg"><img class="inst-logo" src="/ucsf-logo.png" alt="UCSF" /> <a href="https://stemcell.ucsf.edu/" target="_blank">UCSF, Broad Center of Regeneration Medicine</a>, Brack Lab</p>
+          <p class="jorg"><img class="inst-logo" src="/assets/icons/ucsf-logo.png" alt="UCSF" /> <a href="https://stemcell.ucsf.edu/" target="_blank">UCSF, Broad Center of Regeneration Medicine</a>, Brack Lab</p>
           <div class="jorgsub">
             <p>One of the world's leading stem cell and regenerative medicine centers; $113M Broad Foundation investment spanning muscle, neural, and cardiac regeneration research with direct clinical translation programs</p>
           </div>
@@ -400,7 +416,7 @@
             <span class="jt">Research Associate II, Radiobiology R&amp;D</span>
             <span class="jd">Feb 2017 &ndash; Aug 2019</span>
           </div>
-          <p class="jorg"><img class="inst-logo" src="/siemens-logo.png" alt="Siemens Healthineers" /> <a href="https://www.siemens-healthineers.com/" target="_blank">Varian Medical Systems</a> (now Siemens Healthineers)</p>
+          <p class="jorg"><img class="inst-logo" src="/assets/icons/siemens-logo.png" alt="Siemens Healthineers" /> <a href="https://www.siemens-healthineers.com/" target="_blank">Varian Medical Systems</a> (now Siemens Healthineers)</p>
           <div class="jorgsub">
             <p>Global market leader in radiation therapy (&gt;50% worldwide market share); acquired for $16.4B (2021)</p>
           </div>
@@ -429,19 +445,19 @@
         <div class="sh">🎓 Education</div>
         <div class="edu">
           <p class="deg">Ph.D., Biology of Aging</p>
-          <p class="inst"><a href="https://www.buckinstitute.org/" target="_blank">Buck Institute</a> &amp; <a href="https://gero.usc.edu/" target="_blank">USC</a></p>
+          <p class="inst"><img class="inst-logo" src="/assets/icons/buck-logo.png" alt="" /><a href="https://www.buckinstitute.org/" target="_blank">Buck Institute</a> &amp; <img class="inst-logo" src="/assets/icons/usc-logo.png" alt="" /><a href="https://gero.usc.edu/" target="_blank">USC</a></p>
           <p class="det">December 2025</p>
           <p class="award">Advisor: Prof. Jennifer Garrison | Alfred P. Sloan Fellow; NIH MIRA; NAM Healthy Longevity Catalyst Award; founder, GCRLE</p>
         </div>
         <div class="edu">
           <p class="deg">M.S., Biochemistry &amp; Molecular Biology</p>
-          <p class="inst"><a href="https://www.mcdb.ucsb.edu/" target="_blank">UC Santa Barbara</a></p>
+          <p class="inst"><img class="inst-logo" src="/assets/icons/ucsb-logo.png" alt="" /><a href="https://www.mcdb.ucsb.edu/" target="_blank">UC Santa Barbara</a></p>
           <p class="det">June 2016</p>
           <p class="award">Advisor: Prof. Denise Montell | NAS member; NIH Director's Pioneer Award; discoverer of anastasis</p>
         </div>
         <div class="edu">
           <p class="deg">B.S., Bioengineering</p>
-          <p class="inst"><a href="https://bioengineering.stanford.edu/" target="_blank">Stanford University</a></p>
+          <p class="inst"><img class="inst-logo" src="/assets/icons/stanford-logo.png" alt="" /><a href="https://bioengineering.stanford.edu/" target="_blank">Stanford University</a></p>
           <p class="det">June 2015</p>
           <p class="award">Advisor: Prof. Lucy Shapiro | Lasker&ndash;Koshland Award (2025); National Medal of Science; NAS member</p>
         </div>
