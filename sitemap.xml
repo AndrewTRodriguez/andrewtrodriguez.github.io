@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://andrewtrodriguez.github.io/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://andrewtrodriguez.github.io/og-image.jpg</image:loc>
+      <image:title>Andrew T. Rodriguez</image:title>
+      <image:caption>Ph.D. Scientist in Aging Biology and Frontier AI Evaluation</image:caption>
+    </image:image>
   </url>
 </urlset>
