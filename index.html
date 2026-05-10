@@ -3,207 +3,220 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Andrew T. Rodriguez | Project-Based Learning Portfolio</title>
-  <meta name="description" content="Andrew T. Rodriguez builds high-impact web experiences and project-based learning solutions. Explore selected work, skills, and contact information." />
+  <title>Andrew T. Rodriguez | Ph.D. Scientist — Aging Biology</title>
+  <meta name="description" content="Andrew T. Rodriguez, Ph.D. scientist specializing in the biology of aging, applying rigorous experimental design and scientific judgment. Routine user of Claude and Claude Code." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://andrewtrodriguez.github.io/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Andrew T. Rodriguez | Project-Based Learning Portfolio" />
-  <meta property="og:description" content="A focused, SEO-optimized portfolio showcasing product thinking, technical depth, and measurable impact." />
+  <meta property="og:title" content="Andrew T. Rodriguez | Ph.D. Scientist — Aging Biology" />
+  <meta property="og:description" content="Ph.D.-trained scientist in the biology of aging. Evaluating frontier models in biology." />
   <meta property="og:url" content="https://andrewtrodriguez.github.io/" />
   <meta property="og:site_name" content="Andrew T. Rodriguez" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Andrew T. Rodriguez | Project-Based Learning Portfolio" />
-  <meta name="twitter:description" content="Explore projects, outcomes, and strengths built for mission-driven teams." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Andrew T. Rodriguez | Ph.D. Scientist — Aging Biology" />
+  <meta name="twitter:description" content="Ph.D.-trained scientist in the biology of aging. Evaluating frontier models in biology." />
 
   <style>
-    :root {
-      --buck-blue: #005f86;
-      --buck-navy: #003b5c;
-      --buck-teal: #00a6b4;
-      --buck-gold: #f5b335;
-      --ink: #13293d;
-      --bg: #f5f9fc;
-      --white: #ffffff;
-      --muted: #5c6b7a;
-      --ring: rgba(0, 95, 134, 0.25);
+    @font-face {
+      font-family: 'TTNorms';
+      font-weight: 700;
+      font-style: normal;
+      src: url('https://www.buckinstitute.org/wp-content/themes/buck/webfonts/36EC8F_0_unhinted_0.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'TTNorms';
+      font-weight: 500;
+      font-style: normal;
+      src: url('https://www.buckinstitute.org/wp-content/themes/buck/webfonts/36EC8F_4_unhinted_0.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'TTNorms';
+      font-weight: 400;
+      font-style: normal;
+      src: url('https://www.buckinstitute.org/wp-content/themes/buck/webfonts/36EC8F_5_unhinted_0.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'TTNorms';
+      font-weight: 400;
+      font-style: italic;
+      src: url('https://www.buckinstitute.org/wp-content/themes/buck/webfonts/36EC8F_1_unhinted_0.woff2') format('woff2');
+    }
+    @font-face {
+      font-family: 'TTNorms';
+      font-weight: 300;
+      font-style: normal;
+      src: url('https://www.buckinstitute.org/wp-content/themes/buck/webfonts/36EC8F_2_unhinted_0.woff2') format('woff2');
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--ink);
-      background: var(--bg);
+    :root {
+      --primary: #00b5e6;
+      --secondary: #04477f;
+      --d-blue: #1666a9;
+      --dd-blue: #363F49;
+      --beige: #f3f2f1;
+      --white: #ffffff;
+      --text: #2B333B;
+      --muted: #556474;
+      --rule: #708297;
+      --link-hover: #00799a;
     }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'TTNorms', 'Segoe UI', -apple-system, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--beige);
+    }
+
+    a { color: var(--d-blue); text-decoration: underline; }
+    a:hover { color: var(--link-hover); }
 
     .container {
-      width: min(1120px, 92vw);
+      width: min(1100px, 92vw);
       margin: 0 auto;
     }
 
     header {
-      background: linear-gradient(135deg, var(--buck-navy), var(--buck-blue));
+      background: linear-gradient(135deg, var(--secondary), var(--d-blue));
       color: var(--white);
-      padding: 1rem 0 5rem;
+      padding: 3rem 0;
+      text-align: center;
       position: relative;
       overflow: hidden;
     }
-
     header::after {
       content: "";
       position: absolute;
-      right: -5rem;
-      top: -5rem;
-      width: 18rem;
-      height: 18rem;
-      background: radial-gradient(circle, rgba(245, 179, 53, 0.6), rgba(245, 179, 53, 0));
+      right: -6rem;
+      top: -6rem;
+      width: 20rem;
+      height: 20rem;
+      background: radial-gradient(circle, rgba(0,181,230,0.25), transparent);
       border-radius: 50%;
     }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
+    header h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
       font-weight: 700;
-      letter-spacing: 0.2px;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+      position: relative;
+      z-index: 1;
+    }
+    header .tagline {
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.85);
+      font-weight: 300;
+      position: relative;
+      z-index: 1;
     }
 
-    .brand img {
-      width: 44px;
-      height: 44px;
-      border-radius: 8px;
-      background: #fff;
-      object-fit: contain;
-      padding: 4px;
+    main {
+      margin-top: -1.5rem;
+      padding-bottom: 3rem;
     }
 
-    .hero {
-      margin-top: 3rem;
+    .content {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 2rem;
-      align-items: center;
-      position: relative;
-      z-index: 2;
+      grid-template-columns: 1fr 320px;
+      gap: 1.5rem;
     }
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      line-height: 1.1;
-      margin: 0 0 1rem;
-    }
-
-    .lead {
-      font-size: clamp(1rem, 2.2vw, 1.25rem);
-      max-width: 62ch;
-      margin-bottom: 1.6rem;
-      color: #e9f4ff;
-    }
-
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 0.75rem 1.1rem;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: transform 120ms ease, box-shadow 120ms ease;
-      border: 2px solid transparent;
-    }
-
-    .btn:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 4px var(--ring);
-    }
-
-    .btn-primary {
-      background: var(--buck-gold);
-      color: #2a1d00;
-    }
-
-    .btn-secondary {
-      border-color: rgba(255,255,255,.65);
-      color: #fff;
-    }
-
-    .btn:hover { transform: translateY(-1px); }
-
-    .hero-card {
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.25);
-      backdrop-filter: blur(4px);
-      border-radius: 18px;
-      padding: 1.2rem;
-    }
-
-    main { margin-top: -2.6rem; }
-
-    section {
+    .panel {
       background: var(--white);
-      border-radius: 18px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0,0,0,.06);
-      margin-bottom: 1.2rem;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: var(--buck-navy);
-      font-size: clamp(1.35rem, 3vw, 2rem);
-    }
-
-    .grid {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .card {
-      border: 1px solid #e4ecf3;
-      border-left: 6px solid var(--buck-teal);
       border-radius: 14px;
-      padding: 1rem;
-      background: #fbfdff;
+      padding: 1.8rem;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.06);
     }
 
-    .kpi {
-      font-size: 1.7rem;
-      margin: 0;
-      color: var(--buck-blue);
-      font-weight: 800;
+    .sh {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--secondary);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-bottom: 1.5px solid var(--rule);
+      padding-bottom: 4px;
+      margin-top: 1.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .sh:first-child { margin-top: 0; }
+
+    .profile {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--text);
     }
 
-    .muted { color: var(--muted); }
+    .job { margin-bottom: 1.4rem; }
+    .job:last-child { margin-bottom: 0; }
+    .jrow { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; }
+    .jt { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .jd { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
+    .jorg { font-size: 0.88rem; font-weight: 700; color: var(--d-blue); margin-bottom: 2px; }
+    .jorgsub {
+      font-size: 0.8rem;
+      color: var(--text);
+      border-left: 2.5px solid var(--dd-blue);
+      padding-left: 8px;
+      margin: 4px 0 6px;
+      line-height: 1.45;
+    }
+    .jorgsub p { margin-bottom: 2px; }
+    .jorgsub p:last-child { margin-bottom: 0; }
+    .jdiss { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
+
+    ul.bl { list-style: disc; padding-left: 1.1rem; margin: 0.3rem 0 0; }
+    ul.bl li { font-size: 0.87rem; color: var(--text); line-height: 1.55; margin-bottom: 4px; }
+    ul.bl li:last-child { margin-bottom: 0; }
+
+    .pub { font-size: 0.87rem; color: var(--text); line-height: 1.55; padding-left: 1rem; text-indent: -1rem; margin-bottom: 6px; }
+    .pub:last-child { margin-bottom: 0; }
+
+    .ci { font-size: 0.9rem; color: var(--text); line-height: 1.7; }
+    .ci a { color: var(--d-blue); }
+
+    .edu { margin-bottom: 1rem; }
+    .edu:last-child { margin-bottom: 0; }
+    .edu .deg { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+    .edu .inst { font-size: 0.85rem; font-weight: 700; color: var(--d-blue); }
+    .edu .det { font-size: 0.82rem; color: var(--muted); }
+    .edu .award {
+      font-size: 0.78rem;
+      color: var(--text);
+      border-left: 2.5px solid var(--dd-blue);
+      padding-left: 8px;
+      margin-top: 4px;
+      line-height: 1.45;
+    }
+
+    .sk-cat { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-top: 0.5rem; margin-bottom: 0; }
+    .sk-val { font-size: 0.82rem; color: var(--text); line-height: 1.4; margin-bottom: 4px; }
 
     footer {
-      padding: 1.2rem 0 2rem;
       text-align: center;
+      padding: 1.5rem 0;
       color: var(--muted);
-      font-size: 0.95rem;
+      font-size: 0.85rem;
+      border-top: 1px solid #ddd;
+      background: var(--white);
     }
 
     @media (max-width: 860px) {
-      .hero { grid-template-columns: 1fr; }
-      main { margin-top: -2rem; }
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body { background: none; }
+      .panel { box-shadow: none; border-radius: 0; }
+      header { background: var(--secondary); }
     }
   </style>
 
@@ -213,79 +226,149 @@
     "@type": "Person",
     "name": "Andrew T. Rodriguez",
     "url": "https://andrewtrodriguez.github.io/",
-    "jobTitle": "Product-Focused Web Developer",
+    "jobTitle": "Ph.D. Scientist, Biology of Aging",
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Stanford University"},
+      {"@type": "CollegeOrUniversity", "name": "UC Santa Barbara"},
+      {"@type": "CollegeOrUniversity", "name": "University of Southern California"},
+      {"@type": "Organization", "name": "Buck Institute for Research on Aging"}
+    ],
     "sameAs": [
+      "https://linkedin.com/in/andrew-rodriguez",
       "https://github.com/AndrewTRodriguez"
     ],
-    "knowsAbout": ["Web Development", "Project-Based Learning", "Product Strategy", "Accessibility", "SEO"]
+    "knowsAbout": ["Aging Biology", "C. elegans Genetics", "RNA-seq", "Bioinformatics", "Confocal Microscopy", "AI/ML Evaluation"]
   }
   </script>
 </head>
 <body>
   <header>
     <div class="container">
-      <nav aria-label="Main">
-        <div class="brand">
-          <img src="https://www.buckinstitute.org/wp-content/themes/pblworks/assets/images/bie-logo.svg" alt="PBLWorks logo" loading="lazy" />
-          <span>Andrew T. Rodriguez</span>
-        </div>
-        <a class="btn btn-secondary" href="mailto:andrew@example.com">Contact</a>
-      </nav>
-
-      <div class="hero">
-        <div>
-          <h1>Build meaningful products that scale learning and impact.</h1>
-          <p class="lead">I help teams turn ambitious ideas into fast, accessible, measurable web experiences—combining technical execution with product-level judgment.</p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://github.com/AndrewTRodriguez">View GitHub</a>
-            <a class="btn btn-secondary" href="#work">Explore Work</a>
-          </div>
-        </div>
-        <aside class="hero-card" aria-label="Highlights">
-          <p class="kpi">10+ shipped initiatives</p>
-          <p class="muted">From concept to launch, focused on user outcomes and performance.</p>
-          <p class="kpi">95+ Lighthouse potential</p>
-          <p class="muted">SEO, accessibility, and speed considered from day one.</p>
-        </aside>
-      </div>
+      <h1>Andrew T. Rodriguez</h1>
+      <p class="tagline">Ph.D. Scientist &nbsp;|&nbsp; Aging Biology &nbsp;|&nbsp; Evaluating Frontier Models in Biology</p>
     </div>
   </header>
 
   <main class="container">
-    <section id="work" aria-labelledby="work-title">
-      <h2 id="work-title">Selected Value I Bring</h2>
-      <div class="grid">
-        <article class="card">
-          <h3>Product-Led Engineering</h3>
-          <p>I prioritize what creates measurable value, not just what is technically interesting.</p>
-        </article>
-        <article class="card">
-          <h3>SEO + Performance by Default</h3>
-          <p>Technical SEO, semantic HTML, and lean front-end decisions are built into every delivery.</p>
-        </article>
-        <article class="card">
-          <h3>Mission-Driven Collaboration</h3>
-          <p>I communicate clearly with stakeholders and turn feedback loops into momentum.</p>
-        </article>
-      </div>
-    </section>
+    <div class="content">
 
-    <section aria-labelledby="why-title">
-      <h2 id="why-title">Why Employers Hire Me</h2>
-      <ul>
-        <li><strong>Fast execution:</strong> I turn ambiguity into functioning product slices quickly.</li>
-        <li><strong>Systems thinking:</strong> I design solutions that are maintainable, testable, and reusable.</li>
-        <li><strong>User empathy:</strong> I optimize for clarity, inclusion, and tangible outcomes.</li>
-      </ul>
-    </section>
+      <!-- LEFT COLUMN -->
+      <div class="panel">
+        <div class="sh">Profile</div>
+        <p class="profile">Ph.D.-trained scientist in the biology of aging, applying rigorous experimental design and scientific judgment to questions where confidently-wrong answers are common. Routine user of Claude and Claude Code for analysis, coding, and literature work; interested in building evaluations that probe where frontier models fail in biology.</p>
+
+        <div class="sh">Experience</div>
+
+        <div class="job">
+          <div class="jrow">
+            <span class="jt">Ph.D. Research Scientist, Biology of Aging</span>
+            <span class="jd">Aug 2020 – Dec 2025</span>
+          </div>
+          <p class="jorg">Buck Institute for Research on Aging &amp; University of Southern California (USC), Garrison Lab</p>
+          <div class="jorgsub">
+            <p>Buck Institute: world's first independent research institute devoted exclusively to aging biology</p>
+            <p>USC: world's oldest &amp; largest school of gerontology, home to the first Ph.D. in Gerontology</p>
+          </div>
+          <p class="jdiss">Dissertation: Cell Non-Autonomous Regulation of Aging and Stress Responses in <em>C. elegans</em></p>
+          <ul class="bl">
+            <li>Discovered that the neuropeptide nematocin, an oxytocin/vasopressin homolog, suppresses the heat shock response in <em>C. elegans</em>. This is the first known endogenous inter-cellular signaling molecule identified with this function; first-author manuscript in preparation.</li>
+            <li>Demonstrated tissue-specific, age-dependent regulation of autophagy and HSF-1 activation using fluorescent reporter strains, confocal microscopy (Zeiss LSM980 Airyscan), and image analysis pipelines (Imaris, ImageJ, CellProfiler).</li>
+            <li>Built RNA-seq differential expression and pathway enrichment pipeline in R (STAR, DESeq2, clusterProfiler), identifying 42 differentially expressed genes after heat shock, including 1.9-fold upregulation of autophagy receptor gene <em>sqst-1</em>.</li>
+            <li>Established lifespan, thermotolerance, and RNAi workflows using novel <em>C. elegans</em> strains generated via genetic crossing; demonstrated autophagy-dependence of the survival phenotype via <em>lgg-1</em> RNAi knockdown and Cox proportional hazards modeling.</li>
+            <li>President (2024–2025) and Vice President (2023–2024) of the <a href="https://www.linkedin.com/in/multicultural-trainee-association/" target="_blank">Buck Institute Multicultural Trainee Association</a>, where I recruited and led a five-member team delivering professional development, institute-wide events, and STEM outreach to underrepresented Bay Area schools; hosted invited speakers Saul Villeda (UCSF) and Sonnet Davis (Denali Therapeutics).</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="jrow">
+            <span class="jt">Staff Research Associate II, Stem Cell Aging</span>
+            <span class="jd">Aug 2019 – Aug 2020</span>
+          </div>
+          <p class="jorg">University of California, San Francisco (UCSF), Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, Brack Lab</p>
+          <div class="jorgsub">
+            <p>One of the world's leading stem cell and regenerative medicine centers; $113M Broad Foundation investment spanning muscle, neural, and cardiac regeneration research with direct clinical translation programs</p>
+          </div>
+          <ul class="bl">
+            <li>Isolated and characterized satellite cells from murine skeletal muscle to study age-associated changes in stem-cell function; performed cryosectioning, immunostaining, and flow cytometry to evaluate lineage composition and regenerative potential.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="jrow">
+            <span class="jt">Research Associate II, Radiobiology R&amp;D</span>
+            <span class="jd">Feb 2017 – Aug 2019</span>
+          </div>
+          <p class="jorg">Varian Medical Systems (now Siemens Healthineers)</p>
+          <div class="jorgsub">
+            <p>Global market leader in radiation therapy (&gt;50% worldwide market share); acquired for $16.4B (2021)</p>
+          </div>
+          <ul class="bl">
+            <li>Designed and executed in-vitro assays evaluating DNA-damage and repair mechanisms following radiation exposure; isolated and processed PBMCs from human samples; contributed to AACR 2019 conference abstract.</li>
+          </ul>
+        </div>
+
+        <div class="sh">Selected Projects</div>
+        <ul class="bl">
+          <li><strong>Mouse Lifespan Meta-Analysis Tool.</strong> In development, building with Claude Code and deploying on Vercel. Compiles published lifespan data for laboratory mice across longevity-drug interventions and renders interactive graphical comparisons for fast literature triage.</li>
+        </ul>
+
+        <div class="sh">Publications</div>
+        <p class="pub"><strong>Rodriguez A.T.</strong> et al. "Neuropeptide Regulation of the Heat Shock Response." Manuscript in preparation (Garrison Lab).</p>
+        <p class="pub">Wang W., Flury A.G., <strong>Rodriguez A.T.</strong> (co-first), et al. "<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9764823/" target="_blank">A role for worm <em>cutl-24</em> in background- and parent-of-origin-dependent ER stress resistance.</a>" BMC Genomics 23, 842 (2022).</p>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="panel">
+        <div class="sh">Contact</div>
+        <p class="ci">San Francisco Bay Area, CA</p>
+        <p class="ci">US Citizen</p>
+        <p class="ci"><a href="tel:+12108347724">(210) 834-7724</a></p>
+        <p class="ci"><a href="mailto:andrewthomasrodriguez@gmail.com">andrewthomasrodriguez@gmail.com</a></p>
+        <p class="ci"><a href="https://linkedin.com/in/andrew-rodriguez" target="_blank">linkedin.com/in/andrew-rodriguez</a></p>
+
+        <div class="sh">Education</div>
+
+        <div class="edu">
+          <p class="deg">Ph.D., Biology of Aging</p>
+          <p class="inst">Buck Institute for Research on Aging &amp; University of Southern California (USC)</p>
+          <p class="det">Conferred December 2025</p>
+          <p class="award">Advisor Prof. Jennifer Garrison: Alfred P. Sloan Research Fellow; NIH MIRA; National Academy of Medicine Healthy Longevity Catalyst Award; founder of the Global Consortium for Reproductive Longevity &amp; Equality (GCRLE)</p>
+        </div>
+        <div class="edu">
+          <p class="deg">M.S., Biochemistry &amp; Molecular Biology</p>
+          <p class="inst">UC Santa Barbara</p>
+          <p class="det">Graduated June 2016</p>
+          <p class="award">Advisor Prof. Denise Montell: National Academy of Sciences member (2021); NIH Director's Pioneer Award; discoverer of anastasis, the reversibility of apoptosis</p>
+        </div>
+        <div class="edu">
+          <p class="deg">B.S., Bioengineering</p>
+          <p class="inst">Stanford University</p>
+          <p class="det">Graduated June 2015</p>
+          <p class="award">Advisor Prof. Lucy Shapiro: Lasker–Koshland Award (2025, "American Nobel"); National Medal of Science; National Academy of Sciences member</p>
+        </div>
+
+        <div class="sh">Skills</div>
+
+        <p class="sk-cat">AI tools</p>
+        <p class="sk-val">Claude &amp; Claude Code (daily), ChatGPT, Cursor (coding assistance, literature synthesis)</p>
+
+        <p class="sk-cat">Computational &amp; bioinformatics</p>
+        <p class="sk-val">R (DESeq2, clusterProfiler, ggplot2), STAR aligner for RNA-seq, Python, MATLAB, survival analysis (Cox PH, Kaplan–Meier), GraphPad Prism</p>
+
+        <p class="sk-cat">Wet lab &amp; cell culture</p>
+        <p class="sk-val">Mammalian cell culture, PBMC isolation &amp; processing, in vitro assay design, RNAi knockdown, qPCR, RNA isolation, RNA-seq library prep (Illumina TruSeq), plasmid cloning, flow cytometry (FACS), immunostaining, cryosectioning, mouse muscle stem cell biology, <em>C. elegans</em> genetics (CRISPR/Cas9, RNAi, lifespan &amp; thermotolerance assays, microinjection, transgenic strain construction), optogenetics</p>
+
+        <p class="sk-cat">Imaging &amp; quantification</p>
+        <p class="sk-val">Immunofluorescence, confocal microscopy (Zeiss LSM980 Airyscan), 3D segmentation (Imaris, ImageJ, CellProfiler), fluorescent reporter strain design</p>
+      </div>
+
+    </div>
   </main>
 
   <footer>
-    <div class="container">© <span id="year"></span> Andrew T. Rodriguez · Built for GitHub Pages</div>
+    <div class="container">&copy; <span id="year"></span> Andrew T. Rodriguez</div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
