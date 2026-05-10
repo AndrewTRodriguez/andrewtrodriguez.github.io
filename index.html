@@ -208,7 +208,8 @@
     .jrow { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; }
     .jt { font-size: 0.95rem; font-weight: 700; color: var(--dd-blue); }
     .jd { font-size: 0.8rem; color: var(--muted); white-space: nowrap; font-weight: 500; }
-    .jorg { font-size: 0.85rem; font-weight: 700; color: var(--d-blue); margin-top: 2px; }
+    .jorg { font-size: 0.85rem; font-weight: 700; color: var(--d-blue); margin-top: 2px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+    .inst-logo { height: 18px; width: auto; opacity: 0.85; flex-shrink: 0; }
     .jorgsub {
       font-size: 0.78rem;
       color: var(--muted);
@@ -329,7 +330,7 @@
       <img class="avatar" src="/avatar.png" alt="Andrew T. Rodriguez" width="110" height="110" />
       <div class="header-text">
         <h1>Andrew T. Rodriguez</h1>
-        <p class="tagline">Ph.D. Scientist &mdash; Aging Biology &amp; Frontier AI Evaluation</p>
+        <p class="tagline">Ph.D. Scientist | Aging Biology &amp; Frontier AI Evaluation</p>
         <div class="header-links">
           <a href="https://linkedin.com/in/andrew-rodriguez" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -353,19 +354,19 @@
     <!-- MAIN CONTENT -->
     <main>
       <div class="section">
-        <div class="sh">Profile</div>
-        <p class="profile">Ph.D.-trained scientist in the biology of aging, applying rigorous experimental design and scientific judgment to questions where confidently-wrong answers are common. Routine user of Claude and Claude Code for analysis, coding, and literature work; interested in building evaluations that probe where frontier models fail in biology&mdash;identifying capability gaps in experimental planning, data interpretation, and mechanistic reasoning.</p>
+        <div class="sh">👋🏽 Profile</div>
+        <p class="profile">Ph.D.-trained scientist in the biology of aging, applying rigorous experimental design and scientific judgment to questions where confidently-wrong answers are common. Routine user of Claude and Claude Code for analysis, coding, and literature work; interested in building evaluations that probe where frontier models fail in biology, identifying capability gaps in experimental planning, data interpretation, and mechanistic reasoning.</p>
       </div>
 
       <div class="section">
-        <div class="sh">Experience</div>
+        <div class="sh">💼 Experience</div>
 
         <div class="job">
           <div class="jrow">
             <span class="jt">Ph.D. Research Scientist, Biology of Aging</span>
             <span class="jd">Aug 2020 &ndash; Dec 2025</span>
           </div>
-          <p class="jorg">Buck Institute for Research on Aging &amp; University of Southern California (USC), Garrison Lab</p>
+          <p class="jorg"><img class="inst-logo" src="https://www.buckinstitute.org/wp-content/themes/buck/assets/images/buck-logo.svg" alt="Buck Institute" /> Buck Institute for Research on Aging &amp; USC, Garrison Lab</p>
           <div class="jorgsub">
             <p>Buck Institute: world's first independent research institute devoted exclusively to aging biology</p>
             <p>USC: world's oldest &amp; largest school of gerontology, home to the first Ph.D. in Gerontology</p>
@@ -385,7 +386,7 @@
             <span class="jt">Staff Research Associate II, Stem Cell Aging</span>
             <span class="jd">Aug 2019 &ndash; Aug 2020</span>
           </div>
-          <p class="jorg">UCSF, Eli and Edythe Broad Center of Regeneration Medicine and Stem Cell Research, Brack Lab</p>
+          <p class="jorg"><img class="inst-logo" src="https://identity.ucsf.edu/sites/g/files/tkssra4681/f/wysiwyg/UCSF_sig_navy_RGB.png" alt="UCSF" /> UCSF, Broad Center of Regeneration Medicine, Brack Lab</p>
           <div class="jorgsub">
             <p>One of the world's leading stem cell and regenerative medicine centers; $113M Broad Foundation investment spanning muscle, neural, and cardiac regeneration research with direct clinical translation programs</p>
           </div>
@@ -399,7 +400,7 @@
             <span class="jt">Research Associate II, Radiobiology R&amp;D</span>
             <span class="jd">Feb 2017 &ndash; Aug 2019</span>
           </div>
-          <p class="jorg">Varian Medical Systems (now Siemens Healthineers)</p>
+          <p class="jorg"><img class="inst-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Siemens_Healthineers_logo.svg/200px-Siemens_Healthineers_logo.svg.png" alt="Siemens Healthineers" /> Varian Medical Systems (now Siemens Healthineers)</p>
           <div class="jorgsub">
             <p>Global market leader in radiation therapy (&gt;50% worldwide market share); acquired for $16.4B (2021)</p>
           </div>
@@ -410,14 +411,7 @@
       </div>
 
       <div class="section">
-        <div class="sh">Selected Projects</div>
-        <ul class="bl">
-          <li><strong>Mouse Lifespan Meta-Analysis Tool.</strong> Building with Claude Code and deploying on Vercel. Compiles published lifespan data for laboratory mice across longevity-drug interventions and renders interactive graphical comparisons for fast literature triage.</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <div class="sh">Publications</div>
+        <div class="sh">📄 Publications</div>
         <p class="pub"><strong>Rodriguez A.T.</strong> et al. "Neuropeptide Regulation of the Heat Shock Response." Manuscript in preparation (Garrison Lab).</p>
         <p class="pub">Wang W., Flury A.G., <strong>Rodriguez A.T.</strong> (co-first), et al. "<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9764823/" target="_blank">A role for worm <em>cutl-24</em> in background- and parent-of-origin-dependent ER stress resistance.</a>" BMC Genomics 23, 842 (2022).</p>
       </div>
@@ -426,35 +420,35 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="section">
-        <div class="sh">Location</div>
+        <div class="sh">📍 Location</div>
         <p class="ci">San Francisco Bay Area, CA</p>
         <p class="ci">US Citizen</p>
       </div>
 
       <div class="section">
-        <div class="sh">Education</div>
+        <div class="sh">🎓 Education</div>
         <div class="edu">
           <p class="deg">Ph.D., Biology of Aging</p>
           <p class="inst">Buck Institute &amp; USC</p>
           <p class="det">December 2025</p>
-          <p class="award">Advisor: Prof. Jennifer Garrison &mdash; Alfred P. Sloan Fellow; NIH MIRA; NAM Healthy Longevity Catalyst Award; founder, GCRLE</p>
+          <p class="award">Advisor: Prof. Jennifer Garrison | Alfred P. Sloan Fellow; NIH MIRA; NAM Healthy Longevity Catalyst Award; founder, GCRLE</p>
         </div>
         <div class="edu">
           <p class="deg">M.S., Biochemistry &amp; Molecular Biology</p>
           <p class="inst">UC Santa Barbara</p>
           <p class="det">June 2016</p>
-          <p class="award">Advisor: Prof. Denise Montell &mdash; NAS member; NIH Director's Pioneer Award; discoverer of anastasis</p>
+          <p class="award">Advisor: Prof. Denise Montell | NAS member; NIH Director's Pioneer Award; discoverer of anastasis</p>
         </div>
         <div class="edu">
           <p class="deg">B.S., Bioengineering</p>
           <p class="inst">Stanford University</p>
           <p class="det">June 2015</p>
-          <p class="award">Advisor: Prof. Lucy Shapiro &mdash; Lasker&ndash;Koshland Award (2025); National Medal of Science; NAS member</p>
+          <p class="award">Advisor: Prof. Lucy Shapiro | Lasker&ndash;Koshland Award (2025); National Medal of Science; NAS member</p>
         </div>
       </div>
 
       <div class="section">
-        <div class="sh">Skills</div>
+        <div class="sh">🛠️ Skills</div>
 
         <p class="sk-cat">AI &amp; Computation</p>
         <p class="sk-val">Claude &amp; Claude Code (daily user), ChatGPT, Cursor, Python, R, MATLAB, survival analysis (Cox PH, Kaplan&ndash;Meier), GraphPad Prism</p>
