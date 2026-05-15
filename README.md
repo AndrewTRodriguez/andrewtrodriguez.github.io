@@ -1,59 +1,75 @@
-# andrewtrodriguez.github.io
+# andrewtrodriguez.com
 
-Personal website for Andrew T. Rodriguez. Live at [andrewtrodriguez.github.io](https://andrewtrodriguez.github.io/).
+Personal website and online resume for **Andrew T. Rodriguez, Ph.D.** — Ph.D. scientist in aging biology, scientific reasoning, and frontier AI evaluation.
 
-## Tech Stack
+🌐 **Live site:** [andrewtrodriguez.com](https://andrewtrodriguez.com)
 
-- Static HTML/CSS (no build step, no JS framework)
-- [TT Norms](https://www.buckinstitute.org/) typeface via woff2
-- Responsive two-column grid layout
-- GitHub Pages hosting with automatic deploys on push
+## 🛠️ Tech Stack
 
-## SEO & Discoverability
+- **Static HTML/CSS** — no build step, no JavaScript framework
+- **Hosting:** [Vercel](https://vercel.com) on the custom domain `andrewtrodriguez.com`
+- **Legacy redirect:** [andrewtrodriguez.github.io](https://andrewtrodriguez.github.io) → `andrewtrodriguez.com` (served from the `gh-pages-redirect` branch via GitHub Pages)
+- **Typography:** TT Norms via self-hosted woff2
 
-- JSON-LD structured data (schema.org Person)
+## 📁 Project Structure
+
+```
+.
+├── index.html           # Main page
+├── 404.html             # Custom 404 (gh-pages-redirect branch)
+├── vercel.json          # Vercel config + security headers (CSP, X-Frame-Options)
+├── assets/
+│   ├── icons/           # Favicons, institution logos
+│   └── images/          # Avatar, og-image
+├── ai.txt               # AI agent permissions
+├── llms.txt             # LLM-readable site summary
+├── robots.txt           # Crawler permissions
+├── sitemap.xml          # Sitemap with image namespace
+└── site.webmanifest     # PWA manifest
+```
+
+## 🔍 SEO & Discoverability
+
+- JSON-LD structured data (schema.org `Person`)
 - Open Graph and Twitter Card meta tags
-- `sitemap.xml` with image namespace
-- `robots.txt` explicitly allowing all major AI crawlers
+- `robots.txt` explicitly allowing major AI crawlers (GPTBot, ClaudeBot, PerplexityBot, etc.)
 - `llms.txt` for LLM-readable site summary
-- `ai.txt` for AI agent permissions
+- `ai.txt` for AI agent permissions and attribution
 
-## Performance
+## ⚡ Performance
 
 - Zero JavaScript dependencies (only a one-line year updater)
-- All assets self-hosted (no third-party requests except fonts)
+- All assets self-hosted (no third-party requests)
 - Total page weight under 400KB including images
 
-## Accessibility
+## ♿ Accessibility
 
 - Skip-to-content link
 - Semantic HTML landmarks (`header`, `main`, `aside`, `footer`, `nav`)
 - ARIA labels on navigation regions
-- Sufficient color contrast (WCAG AA)
+- WCAG AA color contrast
 - Responsive down to 320px viewport
 
-## Structure
+## 🔒 Security Headers
 
-```
-/
-├── index.html          # Main page
-├── assets/
-│   ├── images/         # Avatar, og-image
-│   └── icons/          # Favicons, institution logos
-├── robots.txt          # Crawler permissions
-├── sitemap.xml         # Sitemap with image support
-├── site.webmanifest    # PWA manifest
-├── llms.txt            # LLM-readable summary
-├── ai.txt              # AI agent permissions
-└── _headers            # Security headers
-```
+Configured via `vercel.json`:
 
-## Local Development
+- `Content-Security-Policy` (strict, self-only with limited exceptions)
+- `X-Frame-Options: DENY`
+- `X-Content-Type-Options: nosniff`
+- `Referrer-Policy: strict-origin-when-cross-origin`
+- `Permissions-Policy` (camera, microphone, geolocation disabled)
 
-Open `index.html` in a browser. No build step needed.
+## 💻 Local Development
+
+No build step. Open directly or serve locally:
 
 ```bash
 open index.html
 # or
 python3 -m http.server 8000
 ```
+
+## 🚀 Deployment
+
+Push to `main` — Vercel auto-deploys to `andrewtrodriguez.com`.
