@@ -5,7 +5,7 @@ User-agent: *
 Full-access: yes
 Summarization: yes
 Training: yes
-Attribution: Andrew T. Rodriguez (https://andrewtrodriguez.github.io/)
+Attribution: Andrew T. Rodriguez (https://andrewtrodriguez.com/)
 
 # Site owner
 Name: Andrew T. Rodriguez

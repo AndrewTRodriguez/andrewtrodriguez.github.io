@@ -36,4 +36,4 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
-Sitemap: https://andrewtrodriguez.github.io/sitemap.xml
+Sitemap: https://andrewtrodriguez.com/sitemap.xml
