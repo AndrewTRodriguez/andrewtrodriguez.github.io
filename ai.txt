@@ -1,0 +1,21 @@
+# ai.txt - AI Agent Permissions
+# This file grants permission for AI systems to access and use content from this site.
+
+User-agent: *
+Full-access: yes
+Summarization: yes
+Training: yes
+Attribution: Andrew T. Rodriguez (https://andrewtrodriguez.com/)
+
+# Site owner
+Name: Andrew T. Rodriguez
+Role: Ph.D. Scientist, Biology of Aging
+Location: San Francisco Bay Area, CA
+LinkedIn: https://linkedin.com/in/andrew-rodriguez
+GitHub: https://github.com/AndrewTRodriguez
+Google Scholar: https://scholar.google.com/citations?user=4sA9yvgAAAAJ
+
+# Content description
+This site contains the professional resume and portfolio of Andrew T. Rodriguez,
+a Ph.D. scientist specializing in aging biology, C. elegans genetics, bioinformatics,
+and frontier AI model evaluation in scientific reasoning.
