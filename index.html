@@ -224,7 +224,11 @@
     .jt { font-size: 0.95rem; font-weight: 700; color: var(--dd-blue); }
     .jd { font-size: 0.8rem; color: var(--muted); white-space: nowrap; font-weight: 500; }
     .jorg { font-size: 0.85rem; font-weight: 500; color: var(--d-blue); margin-top: 2px; line-height: 1.4; }
-    .inst-logo { height: 14px; width: auto; opacity: 0.85; vertical-align: middle; margin-right: 3px; position: relative; top: -2px; }
+    .inst-logo { height: 14px; width: auto; opacity: 0.85; vertical-align: middle; margin-right: 3px; position: relative; top: -1px; }
+    /* Flat, opaque-background logos (solid-color squares) read visually "taller" than round or
+       transparent marks at the same pixel height, so they need a smaller render size rather than
+       the same vertical offset to sit level with adjacent text. */
+    .inst-logo.logo-flat { height: 11px; top: 0; }
     .jorgsub {
       font-size: 0.78rem;
       color: var(--muted);
@@ -286,7 +290,8 @@
     .edu:last-child { margin-bottom: 0; }
     .edu .deg { font-size: 0.95rem; font-weight: 700; color: var(--dd-blue); line-height: 1.3; }
     .edu .inst { font-size: 0.85rem; font-weight: 500; color: var(--d-blue); line-height: 1.3; margin-top: 1px; display: inline-flex; align-items: center; gap: 5px; }
-    .edu .inst-logo { height: 13px; width: auto; opacity: 0.85; flex-shrink: 0; vertical-align: middle; position: relative; top: -2px; }
+    .edu .inst-logo { height: 13px; width: auto; opacity: 0.85; flex-shrink: 0; vertical-align: middle; position: relative; top: -1px; }
+    .edu .inst-logo.logo-flat { height: 10px; top: 0; }
     .edu .det { font-size: 0.8rem; color: var(--muted); font-weight: 500; margin-top: 2px; }
     .edu .thesis { font-size: 0.83rem; color: var(--muted); font-style: italic; margin-top: 2px; line-height: 1.4; }
     .edu .award {
@@ -415,7 +420,7 @@
             <span class="jt">Ph.D. Domain Expert, AI Model Evaluation (Biology)</span>
             <span class="jd">Jun 2026 &ndash; Present</span>
           </div>
-          <p class="jorg"><img class="inst-logo" src="/assets/icons/handshake-logo.png" alt="Handshake" /> <a href="https://joinhandshake.com/ai/" target="_blank">Handshake</a></p>
+          <p class="jorg"><img class="inst-logo logo-flat" src="/assets/icons/handshake-logo.png" alt="Handshake" /> <a href="https://joinhandshake.com/ai/" target="_blank">Handshake</a></p>
           <ul class="bl">
             <li>Review RL rollout trajectories for leading frontier AI labs, comparing highest- and lowest-scoring model attempts across dozens of chain-of-thought steps in constrained, no-internet Python environments, on tasks spanning protein variant-effect prediction, bioinformatics, image analysis, and meta-analysis generation.</li>
             <li>Assess task design, rubric quality, realism, and difficulty, distinguishing genuine scientific difficulty from difficulty artificially introduced by task or environment constraints.</li>
@@ -453,7 +458,7 @@
             <span class="jt">Staff Research Associate II, Stem Cell Aging</span>
             <span class="jd">Aug 2019 &ndash; Aug 2020</span>
           </div>
-          <p class="jorg"><img class="inst-logo" src="/assets/icons/ucsf-logo.png" alt="UCSF" /> <a href="https://stemcell.ucsf.edu/" target="_blank">UCSF, Broad Center of Regeneration Medicine</a>, <a href="https://msk.ucsf.edu/content/andrew-brack-phd" target="_blank">Brack Lab</a></p>
+          <p class="jorg"><img class="inst-logo logo-flat" src="/assets/icons/ucsf-logo.png" alt="UCSF" /> <a href="https://stemcell.ucsf.edu/" target="_blank">UCSF, Broad Center of Regeneration Medicine</a>, <a href="https://msk.ucsf.edu/content/andrew-brack-phd" target="_blank">Brack Lab</a></p>
           <div class="jorgsub">
             <p>One of the world's leading stem cell and regenerative medicine centers</p>
           </div>
@@ -500,14 +505,14 @@
         <div class="sh">🎓 Education</div>
         <div class="edu">
           <p class="deg">Ph.D., Biology of Aging</p>
-          <p class="inst"><img class="inst-logo" src="/assets/icons/buck-logo.png" alt="" /><a href="https://www.buckinstitute.org/" target="_blank">Buck Institute</a> &amp; <img class="inst-logo" src="/assets/icons/usc-logo.png" alt="" /><a href="https://gero.usc.edu/" target="_blank">USC</a></p>
+          <p class="inst"><img class="inst-logo" src="/assets/icons/buck-logo.png" alt="" /><a href="https://www.buckinstitute.org/" target="_blank">Buck Institute</a> &amp; <img class="inst-logo logo-flat" src="/assets/icons/usc-logo.png" alt="" /><a href="https://gero.usc.edu/" target="_blank">USC</a></p>
           <p class="det">Graduated December 2025</p>
           <p class="thesis">Dissertation: "Cell Non-Autonomous Regulation of Aging and Stress Responses in <em>C. elegans</em>"</p>
           <p class="award">Advisor Prof. Jennifer Garrison: Alfred P. Sloan Research Fellow; founding director of GCRLE (Global Consortium for Reproductive Longevity &amp; Equality)</p>
         </div>
         <div class="edu">
           <p class="deg">M.S., Biochemistry &amp; Molecular Biology</p>
-          <p class="inst"><img class="inst-logo" src="/assets/icons/ucsb-logo.png" alt="" /><a href="https://www.mcdb.ucsb.edu/" target="_blank">UC Santa Barbara</a></p>
+          <p class="inst"><img class="inst-logo logo-flat" src="/assets/icons/ucsb-logo.png" alt="" /><a href="https://www.mcdb.ucsb.edu/" target="_blank">UC Santa Barbara</a></p>
           <p class="det">Graduated June 2016</p>
           <p class="thesis">Thesis: investigated the regulation of apoptosis initiation in cancer cells using RNAi-based functional assays</p>
           <p class="award">Advisor Prof. Denise Montell: discoverer of anastasis, the reversibility of apoptosis</p>
