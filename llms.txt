@@ -4,7 +4,7 @@
 
 ## About
 
-Andrew T. Rodriguez is a Ph.D.-trained scientist in the biology of aging, applying rigorous experimental design and scientific judgment to questions where confidently-wrong answers are common. He uses Claude and Claude Code daily for analysis, coding, and literature work. He is interested in building evaluations that probe where frontier models fail in biology, identifying capability gaps in experimental planning, data interpretation, and mechanistic reasoning.
+Andrew T. Rodriguez is a Ph.D.-trained scientist in the Biology of Aging, applying rigorous experimental design and scientific judgment to questions where confidently-wrong answers are common. He uses Claude and Claude Code daily for analysis, coding, and literature work. He is interested in building evaluations that probe where frontier models fail in biology, identifying capability gaps in experimental planning, data interpretation, and mechanistic reasoning.
 
 ## Education
 
