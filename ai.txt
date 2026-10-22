@@ -9,13 +9,11 @@ Attribution: Andrew T. Rodriguez (https://andrewtrodriguez.com/)
 
 # Site owner
 Name: Andrew T. Rodriguez
-Role: Ph.D. Scientist, Biology of Aging
+Role: Ph.D. Scientist, Biology of Aging & AI Training Data
 Location: San Francisco Bay Area, CA
 LinkedIn: https://linkedin.com/in/andrew-rodriguez
 GitHub: https://github.com/AndrewTRodriguez
 Google Scholar: https://scholar.google.com/citations?user=4sA9yvgAAAAJ
 
 # Content description
-This site contains the professional resume and portfolio of Andrew T. Rodriguez,
-a Ph.D. scientist specializing in aging biology, C. elegans genetics, bioinformatics,
-and frontier AI model evaluation in scientific reasoning.
+This site contains the professional resume and portfolio of Andrew T. Rodriguez, a Ph.D. scientist specializing in aging biology, C. elegans genetics, and bioinformatics, who builds and audits reinforcement learning and supervised fine-tuning training data for frontier AI labs.
