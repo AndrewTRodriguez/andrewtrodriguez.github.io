@@ -4,7 +4,7 @@
 
 ## About
 
-Andrew T. Rodriguez is a Ph.D.-trained scientist in the Biology of Aging, with expertise in autophagy, neuroendocrine signaling, and organismal stress resilience. He builds and quality-checks reinforcement learning (RL) and supervised fine-tuning (SFT) data that trains frontier AI models to reason about biology, as a contractor with Sieve and Handshake AI, and builds public evaluations of how models reason about aging biology. He is pursuing biotech roles and strategic project and operations roles at companies building scientific AI training data and evaluations.
+Andrew T. Rodriguez is a Ph.D.-trained scientist in the Biology of Aging, with expertise in autophagy, neuroendocrine signaling, and organismal stress resilience. He builds and quality-checks reinforcement learning (RL) and supervised fine-tuning (SFT) data that trains frontier AI models to reason about biology, as a contractor with Sieve and Handshake AI, advises operations and research teams on QA, and builds public evaluations of how models reason about aging biology. He is pursuing biotech roles and project and operations roles at companies building scientific AI training data and evaluations.
 
 ## Education
 
@@ -16,7 +16,7 @@ Andrew T. Rodriguez is a Ph.D.-trained scientist in the Biology of Aging, with e
 
 - QC Auditor, Biology (Oct 2026-present): Handshake AI; final biology-specialist reviewer of RL tasks in a project's approval pipeline
 - Ph.D. Domain Expert, AI Model Evaluation (Biology) (2026-present): Handshake AI; RL rollout review and RL task design for frontier AI labs
-- Applied AI Research Contractor (2026-present): Sieve; RL task environments, grading rubrics, and multimodal SFT data for scientific image analysis; one of four biology experts advising a client research team on training data strategy
+- Applied AI Research Contractor (2026-present): Sieve; RL task environments, grading rubrics, and multimodal SFT data for scientific image analysis; revising other experts' RL tasks and advising operations and research teams on QA; one of four biology experts advising a client research team on training data strategy
 - Ph.D. Research Scientist, Biology of Aging (2020-2025): Buck Institute & USC, Garrison Lab
 - Staff Research Associate II, Stem Cell Aging (2019-2020): UCSF, Brack Lab
 - Research Associate II, Radiation Toxicology R&D (2017-2019): Varian Medical Systems (now Siemens Healthineers)
@@ -33,7 +33,7 @@ Andrew T. Rodriguez is a Ph.D.-trained scientist in the Biology of Aging, with e
 
 ## Skills
 
-- AI Training Data & Evaluation: RL task, rubric, and SFT data design, QC auditing, agent trajectory review, LLM-as-judge validation, Claude & Claude Code (daily)
+- AI Training Data & Evaluation: RL task, rubric, and SFT data design, QC auditing, QA process improvement, agent trajectory review, LLM-as-judge validation, Claude & Claude Code (daily)
 - Computation: Python, R, MATLAB, Linux
 - Bioinformatics: RNA-seq (STAR, DESeq2, clusterProfiler), pathway enrichment, survival analysis
 - Wet Lab: C. elegans genetics, mammalian cell culture, flow cytometry, CRISPR/Cas9
