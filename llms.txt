@@ -14,7 +14,7 @@ Andrew T. Rodriguez is a Ph.D.-trained scientist in the Biology of Aging, with e
 
 ## Experience
 
-- QC Auditor, Biology (Oct 2026-present): Handshake AI; final biology-specialist reviewer of RL tasks in a project's approval pipeline
+- QC Auditor, Biology (Oct 2026-present): Handshake AI; final biology-specialist reviewer of RL tasks in the task approval pipeline of frontier AI training data projects
 - Ph.D. Domain Expert, AI Model Evaluation (Biology) (2026-present): Handshake AI; RL rollout review and RL task design for frontier AI labs
 - Applied AI Research Contractor (2026-present): Sieve; RL task environments, grading rubrics, and multimodal SFT data for scientific image analysis; revising other experts' RL tasks and advising operations and research teams on QA; one of four biology experts advising a client research team on training data strategy
 - Ph.D. Research Scientist, Biology of Aging (2020-2025): Buck Institute & USC, Garrison Lab
